@@ -93,6 +93,6 @@ $solutions = (
 $projects = (
 
     # framework
-    "framework/src/Sail.Abp.Core"
-    
+    "framework/src/Sail.Abp.Core",
+    "framework/src/Sail.Abp.Wechat"
 )

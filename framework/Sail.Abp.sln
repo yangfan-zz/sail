@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Core", "src\Sail.Abp.Core\Sail.Abp.Core.csproj", "{D20D5615-9158-4F58-B14A-C7E2649184AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Wechat", "src\Sail.Abp.Wechat\Sail.Abp.Wechat.csproj", "{E403C765-C001-44ED-A88A-64B053C1DE91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D20D5615-9158-4F58-B14A-C7E2649184AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20D5615-9158-4F58-B14A-C7E2649184AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20D5615-9158-4F58-B14A-C7E2649184AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E403C765-C001-44ED-A88A-64B053C1DE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E403C765-C001-44ED-A88A-64B053C1DE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E403C765-C001-44ED-A88A-64B053C1DE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E403C765-C001-44ED-A88A-64B053C1DE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
