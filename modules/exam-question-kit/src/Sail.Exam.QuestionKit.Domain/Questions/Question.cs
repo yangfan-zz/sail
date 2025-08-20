@@ -32,11 +32,16 @@ namespace Sail.Exam.QuestionKit.Questions
 
         #endregion
 
+        #region 题目类型
 
         /// <summary>
         /// 题目类型 - 定义题目的形式和答题方式
         /// </summary>
         public QuestionType Type { get; protected set; }
+
+        #endregion
+
+        #region 题目标题/题干
 
         /// <summary>
         /// 题目标题/题干 - 问题的主要描述内容
@@ -44,11 +49,9 @@ namespace Sail.Exam.QuestionKit.Questions
         /// </summary>
         public string Title { get; protected set; }
 
-        /// <summary>
-        /// 题目描述/补充说明 - 对题干的额外解释或上下文信息
-        /// 示例: "阅读以下代码片段后回答问题"
-        /// </summary>
-        public string Description { get; protected set; }
+        #endregion
+
+#re
 
         /// <summary>
         /// 选择题选项列表 - 适用于判断、单选、多选等有选项的题型
