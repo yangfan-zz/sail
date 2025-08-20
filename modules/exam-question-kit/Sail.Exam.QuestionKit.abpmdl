@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Sail.Exam.QuestionKit.Domain": {
+      "path": "src/Sail.Exam.QuestionKit.Domain/Sail.Exam.QuestionKit.Domain.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.Application.Contracts": {
+      "path": "src/Sail.Exam.QuestionKit.Application.Contracts/Sail.Exam.QuestionKit.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.Application": {
+      "path": "src/Sail.Exam.QuestionKit.Application/Sail.Exam.QuestionKit.Application.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.EntityFrameworkCore": {
+      "path": "src/Sail.Exam.QuestionKit.EntityFrameworkCore/Sail.Exam.QuestionKit.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.HttpApi": {
+      "path": "src/Sail.Exam.QuestionKit.HttpApi/Sail.Exam.QuestionKit.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.HttpApi.Client": {
+      "path": "src/Sail.Exam.QuestionKit.HttpApi.Client/Sail.Exam.QuestionKit.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.TestBase": {
+      "path": "test/Sail.Exam.QuestionKit.TestBase/Sail.Exam.QuestionKit.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Sail.Exam.QuestionKit.EntityFrameworkCore.Tests": {
+      "path": "test/Sail.Exam.QuestionKit.EntityFrameworkCore.Tests/Sail.Exam.QuestionKit.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Sail.Exam.QuestionKit.Domain.Tests": {
+      "path": "test/Sail.Exam.QuestionKit.Domain.Tests/Sail.Exam.QuestionKit.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Sail.Exam.QuestionKit.Application.Tests": {
+      "path": "test/Sail.Exam.QuestionKit.Application.Tests/Sail.Exam.QuestionKit.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Sail.Exam.QuestionKit.Domain.Shared": {
+      "path": "src/Sail.Exam.QuestionKit.Domain.Shared/Sail.Exam.QuestionKit.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Sail.Exam.QuestionKit.Installer": {
+       "path": "src/Sail.Exam.QuestionKit.Installer/Sail.Exam.QuestionKit.Installer.abppkg",
+       "folder": "src"
+    }
+  }
+}

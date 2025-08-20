@@ -1,0 +1,9 @@
+{
+  "id": "39749161-ee02-4617-9e97-1693f17b434b",
+  "template": "empty",
+  "modules": {
+    "Sail.Exam.QuestionKit": {
+      "path": "Sail.Exam.QuestionKit.abpmdl"
+    }
+  }
+}

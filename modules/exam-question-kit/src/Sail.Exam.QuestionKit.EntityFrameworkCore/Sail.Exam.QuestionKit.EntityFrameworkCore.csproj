@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Sail.Exam.QuestionKit</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="9.3.1" />
+    <ProjectReference Include="..\Sail.Exam.QuestionKit.Domain\Sail.Exam.QuestionKit.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

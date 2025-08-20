@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Sail.Exam.QuestionKit</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="9.3.1" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="9.3.1" />
+    <ProjectReference Include="..\Sail.Exam.QuestionKit.Domain.Shared\Sail.Exam.QuestionKit.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
