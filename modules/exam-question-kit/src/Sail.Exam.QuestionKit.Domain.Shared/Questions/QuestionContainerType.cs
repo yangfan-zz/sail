@@ -3,6 +3,7 @@
     public enum QuestionContainerType : byte
     {
         None,
+        Education,
         Library,
         Paper
     }
