@@ -9,7 +9,8 @@ namespace Sail.Abp.Wpf;
 internal class WpfHostedService<TApplication, TWindow>(
     TApplication application,
     TWindow? window,
-    IHostApplicationLifetime hostApplicationLifetime)
+    IHostApplicationLifetime hostApplicationLifetime
+)
     : IHostedService
     where TApplication : Application
     where TWindow : Window
@@ -17,12 +18,14 @@ internal class WpfHostedService<TApplication, TWindow>(
     public Task StartAsync(CancellationToken cancellationToken)
     {
         application.Run(window);
-        //hostApplicationLifetime.StopApplication();
+        hostApplicationLifetime.StopApplication();
         return Task.CompletedTask;
     }
 
     public Task StopAsync(CancellationToken cancellationToken)
     {
+        // 结束
+        application.Shutdown();
         return Task.CompletedTask;
     }
 }
