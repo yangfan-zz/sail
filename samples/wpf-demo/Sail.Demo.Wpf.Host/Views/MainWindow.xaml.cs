@@ -1,6 +1,7 @@
 ﻿using System.Windows;
+using Sail.Demo.Wpf.ViewModels;
 
-namespace Sail.Demo.Wpf.Host
+namespace Sail.Demo.Wpf.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

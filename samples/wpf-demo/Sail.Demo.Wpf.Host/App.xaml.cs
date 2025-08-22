@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Sail.Demo.Wpf.Host
+namespace Sail.Demo.Wpf
 {
     /// <summary>
     /// Interaction logic for App.xaml

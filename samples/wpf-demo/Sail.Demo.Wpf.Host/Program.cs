@@ -1,9 +1,10 @@
 ﻿using Microsoft.Extensions.Hosting;
+using Sail.Demo.Wpf.Views;
 using Sail.Wpf.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 
-namespace Sail.Demo.Wpf.Host
+namespace Sail.Demo.Wpf
 {
     public class Program
     {

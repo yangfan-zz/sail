@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+	<RootNamespace>Sail.Demo.Wpf</RootNamespace>
 	<EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
 
@@ -19,6 +20,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
 	  <ProjectReference Include="..\Sail.Wpf.Extensions.Hosting\Sail.Wpf.Extensions.Hosting.csproj" />
 	</ItemGroup>
 </Project>

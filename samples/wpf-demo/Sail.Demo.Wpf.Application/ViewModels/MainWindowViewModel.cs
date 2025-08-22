@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.DependencyInjection;
 
-namespace Sail.Demo.Wpf.Host
+namespace Sail.Demo.Wpf.ViewModels
 {
     public class MainWindowViewModel : ITransientDependency
     {

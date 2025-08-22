@@ -1,10 +1,12 @@
 ﻿using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
-namespace Sail.Demo.Wpf.Host;
+namespace Sail.Demo.Wpf;
 
-[DependsOn(typeof(AbpAutofacModule))]
+[DependsOn(
+    typeof(DemoWpfApplicationModule),
+    typeof(AbpAutofacModule))]
 public class DemoWpfHostModule : AbpModule
 {
-  
+
 }

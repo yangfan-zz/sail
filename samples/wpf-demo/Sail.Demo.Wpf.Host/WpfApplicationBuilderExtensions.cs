@@ -3,7 +3,7 @@ using Sail.Wpf.Extensions.Hosting;
 using Volo.Abp;
 using Volo.Abp.Modularity;
 
-namespace Sail.Demo.Wpf.Host
+namespace Sail.Demo.Wpf
 {
     public static  class WpfApplicationBuilderExtensions
     {
