@@ -1,5 +1,5 @@
-﻿using Sail.Wpf.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Sail.Wpf.Extensions.Hosting;
 using Volo.Abp;
 using Volo.Abp.Modularity;
 

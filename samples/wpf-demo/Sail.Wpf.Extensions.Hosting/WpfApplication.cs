@@ -9,10 +9,15 @@ using Microsoft.Extensions.Logging;
 
 namespace Sail.Wpf.Extensions.Hosting
 {
+    public interface IWpfApplication
+    {
+        IServiceProvider Services { get; }
+    }
+
     /// <summary>
     /// The web application used to configure the HTTP pipeline, and routes.
     /// </summary>
-    public sealed class WpfApplication<TApplication, TWindow> : IHost, IAsyncDisposable
+    public sealed class WpfApplication<TApplication, TWindow> : IWpfApplication, IHost, IAsyncDisposable
         where TApplication : Application
         where TWindow : Window
     {

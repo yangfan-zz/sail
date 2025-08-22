@@ -1,9 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Sail.Wpf.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
-using Volo.Abp;
 
 namespace Sail.Demo.Wpf.Host
 {
@@ -12,9 +10,16 @@ namespace Sail.Demo.Wpf.Host
         public static async Task<int> Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
+#if DEBUG
+                .MinimumLevel.Debug()
+#else
+            .MinimumLevel.Information()
+#endif
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                .Enrich.FromLogContext()
                 .WriteTo.Async(c => c.File("Logs/logs.txt"))
-                //.WriteTo.Async(c => c.Console())
-                .CreateBootstrapLogger();
+                .WriteTo.Async(c => c.Console())
+                .CreateLogger();
 
             try
             {
@@ -23,7 +28,6 @@ namespace Sail.Demo.Wpf.Host
 
                 // 构建默认主机
                 var builder = WpfApplication<App, MainWindow>.CreateBuilder(args);
-
 
                 builder.Host
                     .AddAppSettingsSecretsJson()
@@ -39,15 +43,19 @@ namespace Sail.Demo.Wpf.Host
                             .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                             .Enrich.FromLogContext()
                             .WriteTo.Async(c => c.File("Logs/logs.txt"))
-                            //.WriteTo.Async(c => c.Console())
+                            .WriteTo.Async(c => c.Console())
                             ;
                     });
+                
                 await builder.AddApplicationAsync<DemoWpfHostModule>();
 
                 var app = builder.Build();
-                //await app.InitializeApplicationAsync();
-                 await app.RunAsync();
-                 return 0;
+
+                await app.InitializeAsync();
+                
+                await app.RunAsync();
+
+                return 0;
 
             }
             catch (Exception ex)
