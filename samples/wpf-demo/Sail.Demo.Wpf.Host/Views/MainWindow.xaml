@@ -6,9 +6,10 @@
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:vm="clr-namespace:Sail.Demo.Wpf.ViewModels;assembly=Sail.Demo.Wpf.Application"
                   xmlns:local="clr-namespace:Sail.Demo.Wpf"
+                  d:DataContext="{d:DesignInstance vm:MainWindowViewModel}"
                   mc:Ignorable="d"
                   Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="{Binding Message}"></TextBlock>
+        <TextBlock FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Message}"></TextBlock>
     </Grid>
 </local:BaseWindow>

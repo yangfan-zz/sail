@@ -26,7 +26,7 @@ namespace Sail.Abp.Wpf
         public IServiceCollection Services => _hostApplicationBuilder.Services;
 
         public IHost Build<TApplication, TWindow>() where TApplication : Application
-            where TWindow : Window
+            where TWindow : Window,new()
         {
             if (!Thread.CurrentThread.TrySetApartmentState(ApartmentState.STA))
             {
@@ -34,7 +34,7 @@ namespace Sail.Abp.Wpf
                 Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
             }
 
-            Services.AddTransient<TWindow>();
+          
             Services.AddHostedService<WpfHostedService<TApplication, TWindow>>();
             
             var host = _hostApplicationBuilder.Build();

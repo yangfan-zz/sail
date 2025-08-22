@@ -1,14 +1,15 @@
-﻿using Microsoft.Extensions.Hosting;
-using System.Windows;
-using Microsoft.Extensions.DependencyInjection;
+﻿using System.Windows;
+using Volo.Abp.DependencyInjection;
 
 namespace Sail.Demo.Wpf
 {
-    public class BaseWindow<TViewModel> : Window
+    public interface IBaseWindow
     {
-        public BaseWindow()
-        {
-            DataContext = WpfHost.Host.Services.GetRequiredService<TViewModel>();
-        }
+         IAbpLazyServiceProvider LazyServiceProvider { get;  }
+    }
+
+    public class BaseWindow<TViewModel> : Window, IBaseWindow
+    {
+        public IAbpLazyServiceProvider LazyServiceProvider { get; internal set; }
     }
 }
