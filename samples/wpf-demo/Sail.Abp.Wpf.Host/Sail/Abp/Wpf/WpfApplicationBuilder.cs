@@ -37,7 +37,11 @@ namespace Sail.Abp.Wpf
             Services.AddTransient<TWindow>();
             Services.AddHostedService<WpfHostedService<TApplication, TWindow>>();
             
-            return _hostApplicationBuilder.Build();
+            var host = _hostApplicationBuilder.Build();
+
+            WpfHost.Host = host;
+
+            return host;
         }
     }
 }

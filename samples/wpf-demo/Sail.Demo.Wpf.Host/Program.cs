@@ -42,6 +42,7 @@ namespace Sail.Demo.Wpf
                 await builder.Services.AddApplicationAsync<DemoWpfHostModule>();
 
                 var app = builder.Build<App,MainWindow>();
+                
 
                 await app.InitializeAsync();
                 
