@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Demo.Wpf.Host", "Sail.Demo.Wpf.Host\Sail.Demo.Wpf.Host.csproj", "{141E6D84-B488-1B78-219D-1F3D47BF639D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {040026F3-C494-42BF-919B-74EC85A99C82}
+	EndGlobalSection
+EndGlobal

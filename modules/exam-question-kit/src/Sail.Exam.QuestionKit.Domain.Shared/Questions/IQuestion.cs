@@ -19,6 +19,4 @@
         /// </summary>
         public string Description { get; }
     }
-
-   
 }
