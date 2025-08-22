@@ -20,7 +20,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <ProjectReference Include="..\Sail.Abp.Wpf.Host\Sail.Abp.Wpf.Hosting.csproj" />
 	  <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
-	  <ProjectReference Include="..\Sail.Wpf.Extensions.Hosting\Sail.Wpf.Extensions.Hosting.csproj" />
 	</ItemGroup>
 </Project>

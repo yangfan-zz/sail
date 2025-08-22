@@ -1,8 +1,12 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Sail.Demo.Wpf.Views;
-using Sail.Wpf.Extensions.Hosting;
+
 using Serilog;
 using Serilog.Events;
+using Volo.Abp;
 
 namespace Sail.Demo.Wpf
 {
@@ -26,31 +30,18 @@ namespace Sail.Demo.Wpf
             {
                 Log.Information("Starting WPF host.");
 
-
                 // 构建默认主机
-                var builder = WpfApplication<App, MainWindow>.CreateBuilder(args);
+                var builder = WpfHost.CreateBuilder(args);
 
-                builder.Host
-                    .AddAppSettingsSecretsJson()
-                    .UseAutofac()
-                    .UseSerilog((context, services, loggerConfiguration) =>
-                    {
-                        loggerConfiguration
-#if DEBUG
-                            .MinimumLevel.Debug()
-#else
-                        .MinimumLevel.Information()
-#endif
-                            .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-                            .Enrich.FromLogContext()
-                            .WriteTo.Async(c => c.File("Logs/logs.txt"))
-                            .WriteTo.Async(c => c.Console())
-                            ;
-                    });
-                
-                await builder.AddApplicationAsync<DemoWpfHostModule>();
+                builder.Configuration.AddAppSettingsSecretsJson();
+                builder.Logging.ClearProviders().AddSerilog();
 
-                var app = builder.Build();
+                // Autofac
+                builder.ConfigureContainer(builder.Services.AddAutofacServiceProviderFactory());
+
+                await builder.Services.AddApplicationAsync<DemoWpfHostModule>();
+
+                var app = builder.Build<App,MainWindow>();
 
                 await app.InitializeAsync();
                 
