@@ -13,6 +13,6 @@
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Sail.Abp.Wpf\Sail.Abp.Wpf.csproj" />
+	  <ProjectReference Include="..\Sail.Abp.Wpf.Application\Sail.Abp.Wpf.Mvvm.csproj" />
 	</ItemGroup>
 </Project>

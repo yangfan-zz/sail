@@ -4,6 +4,7 @@ using Microsoft.Extensions.Diagnostics.Metrics;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Windows;
+using CommunityToolkit.Mvvm.DependencyInjection;
 
 namespace Sail.Abp.Wpf
 {
@@ -39,7 +40,7 @@ namespace Sail.Abp.Wpf
             
             var host = _hostApplicationBuilder.Build();
 
-            WpfHost.Host = host;
+            Ioc.Default.ConfigureServices(host.Services);
 
             return host;
         }

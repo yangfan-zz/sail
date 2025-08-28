@@ -1,9 +1,11 @@
-﻿using Sail.Abp.Wpf.Mvvm.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Sail.Abp.Wpf.Mvvm.ViewModels;
 
 namespace Sail.Demo.Wpf.ViewModels
 {
-    public class MainWindowViewModel : BaseViewModel
+    public partial class MainWindowViewModel : BaseViewModel
     {
-        public string Message => "Hello, Generic Host!";
+        [ObservableProperty]
+        public partial string Message { get; protected set; } = "Hello, Generic Host!";
     }
 }
