@@ -7,12 +7,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<RootNamespace>Sail.Demo.Wpf</RootNamespace>
   </PropertyGroup>
-	<ItemGroup>
-	
-		<PackageReference Include="Volo.Abp.Core" Version="9.3.1" />
 
-	</ItemGroup>
-	<ItemGroup>
-	  <ProjectReference Include="..\Sail.Abp.Wpf.Application\Sail.Abp.Wpf.Mvvm.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -5,13 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Demo.Wpf.Host", "Sail.Demo.Wpf.Host\Sail.Demo.Wpf.Host.csproj", "{141E6D84-B488-1B78-219D-1F3D47BF639D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Wpf.Extensions.Hosting", "Sail.Wpf.Extensions.Hosting\Sail.Wpf.Extensions.Hosting.csproj", "{87789913-CCFB-4764-8C2F-B51101D31DE8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Demo.Wpf.Application", "Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj", "{8DC91367-659F-43A5-97DD-652624F27DC5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Wpf", "Sail.Abp.Wpf\Sail.Abp.Wpf.csproj", "{903E35BD-D6EB-45A6-B10D-5DE489C6A1B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Wpf.Hosting", "Sail.Abp.Wpf.Host\Sail.Abp.Wpf.Hosting.csproj", "{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "framework", "framework", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Wpf.Mvvm", "Sail.Abp.Wpf.Application\Sail.Abp.Wpf.Mvvm.csproj", "{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Demo.Wpf.UI", "Sail.Demo.Wpf.UI\Sail.Demo.Wpf.UI.csproj", "{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,6 @@ Global
 		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{141E6D84-B488-1B78-219D-1F3D47BF639D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87789913-CCFB-4764-8C2F-B51101D31DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87789913-CCFB-4764-8C2F-B51101D31DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87789913-CCFB-4764-8C2F-B51101D31DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87789913-CCFB-4764-8C2F-B51101D31DE8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8DC91367-659F-43A5-97DD-652624F27DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8DC91367-659F-43A5-97DD-652624F27DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC91367-659F-43A5-97DD-652624F27DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,9 +39,22 @@ Global
 		{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{903E35BD-D6EB-45A6-B10D-5DE489C6A1B7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {040026F3-C494-42BF-919B-74EC85A99C82}

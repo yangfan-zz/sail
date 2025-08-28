@@ -6,6 +6,6 @@ namespace Microsoft.Extensions.Hosting
     {
         public static WpfApplicationBuilder CreateBuilder(string[]? args) => new(args);
 
-        public static IHost Host { get; set; }
+        public static IHost Host { get; set; } = null!;
     }
 }
