@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.Wpf.Mvvm", "Sail.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Demo.Wpf.UI", "Sail.Demo.Wpf.UI\Sail.Demo.Wpf.UI.csproj", "{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sail.Abp.License", "Sail.Abp.License\Sail.Abp.License.csproj", "{B3368695-C851-49FE-9AE9-9EC0F05ED41A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8A1D6FF-A675-47F0-ACE8-69FC442B5F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3368695-C851-49FE-9AE9-9EC0F05ED41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3368695-C851-49FE-9AE9-9EC0F05ED41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3368695-C851-49FE-9AE9-9EC0F05ED41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3368695-C851-49FE-9AE9-9EC0F05ED41A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{903E35BD-D6EB-45A6-B10D-5DE489C6A1B7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{35BA896E-8B55-4CC3-9AFE-A6DCA5FF6ACF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{DF4FFF93-8F35-4C8C-A7AF-8D5815E6D0CE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B3368695-C851-49FE-9AE9-9EC0F05ED41A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {040026F3-C494-42BF-919B-74EC85A99C82}

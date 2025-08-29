@@ -1,14 +1,15 @@
 ﻿using CommunityToolkit.Mvvm.DependencyInjection;
 using Sail.Abp.Wpf.Mvvm.ViewModels;
-using System.Windows;
+using System.Windows.Controls;
 using Volo.Abp.DependencyInjection;
 
-namespace Sail.Abp.Wpf.Windows
+namespace Sail.Abp.Wpf.Windows.Controls
 {
-    public class SailWindow<TViewModel> : Window, ITransientDependency
+    public class SailUserControl<TViewModel> : UserControl, ITransientDependency
         where TViewModel : class, IBaseViewModel
+
     {
-        public SailWindow()
+        public SailUserControl()
         {
             DataContext = Ioc.Default.GetRequiredService<TViewModel>();
         }

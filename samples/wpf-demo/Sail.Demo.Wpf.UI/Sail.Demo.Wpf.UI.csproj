@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0-windows</TargetFramework>
@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
+
+	  <PackageReference Include="HandyControls" Version="3.6.0" />
+	  <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
   </ItemGroup>
 
 </Project>
