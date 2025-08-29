@@ -3,7 +3,7 @@
     /// <summary>
     /// StudentList.xaml 的交互逻辑
     /// </summary>
-    public partial class StudentList 
+    public partial class StudentList
     {
         public StudentList()
         {

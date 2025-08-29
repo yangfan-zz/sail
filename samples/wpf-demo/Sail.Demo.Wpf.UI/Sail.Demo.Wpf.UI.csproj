@@ -8,9 +8,6 @@
 	<EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
 	<RootNamespace>Sail.Demo.Wpf</RootNamespace>
   </PropertyGroup>
-
- 
-
   <ItemGroup>
 
 	  <PackageReference Include="HandyControls" Version="3.6.0" />

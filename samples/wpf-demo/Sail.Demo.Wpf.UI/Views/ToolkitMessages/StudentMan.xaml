@@ -2,17 +2,18 @@
             x:Class="Sail.Demo.Wpf.Views.ToolkitMessages.StudentMan"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
             xmlns:vm="clr-namespace:Sail.Demo.Wpf.ViewModels.ToolkitMessages;assembly=Sail.Demo.Wpf.Application"
             xmlns:local="clr-namespace:Sail.Demo.Wpf.Views.ToolkitMessages"
-            mc:Ignorable="d"
             d:DataContext="{d:DesignInstance vm:StudentManViewModel}"
+
             Title="StudentMan"  
             Width="600"
             Height="400"
             WindowStartupLocation="CenterScreen"
-    >
+            mc:Ignorable="d">
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -22,7 +23,7 @@
         <local:StudentList Grid.Row="0" Width="300" HorizontalAlignment="Left"/>
 
         <!-- Right -->
-        <local:StudentForm Grid.Row="0" Width="300" HorizontalAlignment="Right"/>
+        <local:StudentForm Grid.Row="0" Width="200" HorizontalAlignment="Right"/>
 
         <!-- Bottom -->
         <TextBox Grid.Row="1"
