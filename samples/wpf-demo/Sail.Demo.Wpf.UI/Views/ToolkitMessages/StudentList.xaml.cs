@@ -1,7 +1,4 @@
-﻿using Sail.Demo.Wpf.ViewModels.ToolkitMessages;
-using System.ComponentModel;
-
-namespace Sail.Demo.Wpf.Views.ToolkitMessages
+﻿namespace Sail.Demo.Wpf.Views.ToolkitMessages
 {
     /// <summary>
     /// StudentList.xaml 的交互逻辑
@@ -11,11 +8,6 @@ namespace Sail.Demo.Wpf.Views.ToolkitMessages
         public StudentList()
         {
             InitializeComponent();
-
-            //if (DesignerProperties.GetIsInDesignMode(this))
-            //{
-                DataContext = new StudentListViewModel();
-            //}
         }
     }
 }

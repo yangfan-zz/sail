@@ -1,13 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	
-	  <TargetFramework>net9.0-windows</TargetFramework>
+	<TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
-	<EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
 	<RootNamespace>Sail.Demo.Wpf</RootNamespace>
+	<EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
   </PropertyGroup>
   <ItemGroup>
 
