@@ -9,22 +9,12 @@
 	<RootNamespace>Sail.Demo.Wpf</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Views\ToolkitMessages\StudentList.xaml.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Remove="Views\ToolkitMessages\StudentList.xaml" />
-  </ItemGroup>
+ 
 
   <ItemGroup>
 
 	  <PackageReference Include="HandyControls" Version="3.6.0" />
 	  <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\ToolkitMessages\" />
   </ItemGroup>
 
 

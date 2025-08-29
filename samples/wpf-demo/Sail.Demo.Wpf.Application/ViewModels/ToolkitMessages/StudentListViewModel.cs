@@ -11,7 +11,6 @@ namespace Sail.Demo.Wpf.ViewModels.ToolkitMessages
     {
         public StudentListViewModel()
         {
-            IsActive = true;
             Students.CollectionChanged += (_, _) => OnPropertyChanged(nameof(StudentCount));
         }
 

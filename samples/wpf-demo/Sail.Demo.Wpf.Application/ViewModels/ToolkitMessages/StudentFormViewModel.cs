@@ -39,6 +39,5 @@ namespace Sail.Demo.Wpf.ViewModels.ToolkitMessages
                 new ValueChangedMessage<Student>(new(Name, Class, Phone))
             );
         }
-
     }
 }

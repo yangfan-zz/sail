@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Sail.Demo.Wpf.Views;
-
+using Sail.Demo.Wpf.Views.ToolkitMessages;
 using Serilog;
 using Serilog.Events;
 using Volo.Abp;
@@ -41,7 +41,7 @@ namespace Sail.Demo.Wpf
 
                 await builder.Services.AddApplicationAsync<DemoWpfHostModule>();
 
-                var app = builder.Build<App,MainWindow>();
+                var app = builder.Build<App, StudentMan>();
                 
 
                 await app.InitializeAsync();
