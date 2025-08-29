@@ -1,19 +1,17 @@
-﻿<SailUserControl x:TypeArguments="mv:StudentListViewModel"
-                 x:Class="Sail.Demo.Wpf.Views.ToolkitMessages.StudentList"
-                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:hc="https://handyorg.github.io/handycontrol"
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                 xmlns:mv="clr-namespace:Sail.Demo.Wpf.ViewModels.ToolkitMessages;assembly=Sail.Demo.Wpf.Application"
-                 d:DataContext="{d:DesignInstance mv:StudentListViewModel}"
-                 d:DesignHeight="300"
-                 d:DesignWidth="250"
-                 d:Background="White"
-                 mc:Ignorable="d" >
-
+﻿<SailUserControl  x:Class="Sail.Demo.Wpf.Views.ToolkitMessages.StudentList"
+                  x:TypeArguments="mv:StudentListViewModel"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:hc="https://handyorg.github.io/handycontrol"
+                  xmlns:mv="clr-namespace:Sail.Demo.Wpf.ViewModels.ToolkitMessages;assembly=Sail.Demo.Wpf.Application"
+                  d:DataContext="{d:DesignInstance Type=mv:StudentListViewModel}"
+                  d:DesignHeight="300"
+                  d:DesignWidth="250"
+                  d:Background="White"
+                  mc:Ignorable="d">
     <DockPanel>
-
         <ToggleButton HorizontalAlignment="Left"
                       DockPanel.Dock="Top"
                       Style="{StaticResource ToggleButtonSwitch}"

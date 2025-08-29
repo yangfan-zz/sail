@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
+	
+	  <TargetFramework>net9.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -10,8 +11,10 @@
   </PropertyGroup>
   <ItemGroup>
 
-	  <PackageReference Include="HandyControls" Version="3.6.0" />
+	  <PackageReference Include="HandyControls" Version="3.4.4" />
 	  <ProjectReference Include="..\Sail.Demo.Wpf.Application\Sail.Demo.Wpf.Application.csproj" />
+
+	  
   </ItemGroup>
 
 

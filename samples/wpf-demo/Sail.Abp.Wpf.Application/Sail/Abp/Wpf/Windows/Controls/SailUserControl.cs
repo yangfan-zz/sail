@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.DependencyInjection;
 using Sail.Abp.Wpf.Mvvm.ViewModels;
+using System.ComponentModel;
 using System.Windows.Controls;
 using Volo.Abp.DependencyInjection;
 
@@ -11,7 +12,10 @@ namespace Sail.Abp.Wpf.Windows.Controls
     {
         public SailUserControl()
         {
-            DataContext = Ioc.Default.GetRequiredService<TViewModel>();
+            if (!DesignerProperties.GetIsInDesignMode(this))
+            {
+                DataContext = Ioc.Default.GetRequiredService<TViewModel>();
+            }
         }
     }
 }
