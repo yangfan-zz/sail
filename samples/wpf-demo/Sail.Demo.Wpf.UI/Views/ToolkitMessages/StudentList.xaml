@@ -14,7 +14,7 @@
     <DockPanel>
         <ToggleButton HorizontalAlignment="Left"
                       DockPanel.Dock="Top"
-                      Style="{StaticResource ToggleButtonSwitch}"
+                      Style="{StaticResource ResourceKey=ToggleButtonSwitch}"
                       IsChecked="{Binding AllowAddNew}"
                       Content="Allow Adding" />
         <hc:TextBox Margin="0,10"

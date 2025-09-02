@@ -10,7 +10,7 @@ namespace Sail.Abp.Wpf
 {
     public class WpfApplicationBuilder(string[]? args) : IHostApplicationBuilder
     {
-        private readonly HostApplicationBuilder _hostApplicationBuilder = new HostApplicationBuilder(args);
+        private readonly HostApplicationBuilder _hostApplicationBuilder = new(args);
 
         public void ConfigureContainer<TContainerBuilder>(IServiceProviderFactory<TContainerBuilder> factory,
             Action<TContainerBuilder>? configure = null) where TContainerBuilder : notnull
@@ -35,7 +35,6 @@ namespace Sail.Abp.Wpf
                 Thread.CurrentThread.SetApartmentState(ApartmentState.STA);
             }
 
-          
             Services.AddHostedService<WpfHostedService<TApplication, TWindow>>();
             
             var host = _hostApplicationBuilder.Build();
