@@ -10,7 +10,6 @@ namespace AvaloniaApplication1.Views
         {
             DataContext = new MainWindowViewModel();
             InitializeComponent();
-            
         }
     }
 }

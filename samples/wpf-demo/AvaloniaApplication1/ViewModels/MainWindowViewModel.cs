@@ -1,7 +1,12 @@
-﻿namespace AvaloniaApplication1.ViewModels
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace AvaloniaApplication1.ViewModels
 {
-    public class MainWindowViewModel : ViewModelBase
+    public partial class MainWindowViewModel : ViewModelBase
     {
         public string Greeting { get; } = "Welcome to Avalonia!";
+
+        [ObservableProperty]
+        private HomeViewModel _homeViewModel = new();
     }
 }
